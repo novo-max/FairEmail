@@ -1,6 +1,9 @@
 name: Android CI
 run-name: ${{github.workflow}} - ${{vars.TAG}} - ${{github.sha}}
 
+permissions:
+  contents: write
+  
 on:
   workflow_dispatch:
     inputs:
