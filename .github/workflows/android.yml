@@ -34,8 +34,7 @@ jobs:
     - name: Check with Lint
       run: ./gradlew lintGithubRelease
     - name: Build with Gradle
-      run: ./gradlew assembleGithubRelease assembleLargeRelease assemblePlayRelease uploadBugsnagGithub-releaseMapping uploadBugsnagLarge-releaseMapping uploadBugsnagPlay-releaseMapping
-    #https://github.com/actions/upload-artifact
+      run: ./gradlew assembleGithubRelease
     - uses: actions/upload-artifact@v4
       with:
         name: Mapping files
